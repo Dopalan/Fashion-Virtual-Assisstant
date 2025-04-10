@@ -35,5 +35,32 @@ export const authStyles = StyleSheet.create({
     color: '#EC4899', // hồng
     fontWeight: 'bold',
   },
-  
+  image: {
+    width: 250,
+    height: 250,
+    resizeMode: 'contain',
+    marginTop: 60,
+  },
+  dot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    marginHorizontal: 4,
+  },
+  dotSelected: {
+    backgroundColor: '#e91e63',
+  },
+  dotUnselected: {
+    backgroundColor: '#ccc',
+  },
+  nextButton: {
+    marginHorizontal: 16,
+    fontSize: 16,
+    color: '#ffffff',
+    backgroundColor: '#e91e63',
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 20,
+    overflow: 'hidden',
+  },
 });
