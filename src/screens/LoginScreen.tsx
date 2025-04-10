@@ -43,7 +43,7 @@ export default function LoginScreen({ navigation }: Props) {
         <Text style={styles.forgotText}>Forgot password?</Text>
       </TouchableOpacity>  */}
 
-      <Button mode="contained" onPress={() => console.log('Login')} style={styles.loginButton}>
+      <Button mode="contained" onPress={() => navigation.navigate('Home')} style={styles.loginButton}>
         Sign In
       </Button>
       

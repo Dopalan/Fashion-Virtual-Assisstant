@@ -46,7 +46,7 @@ export const authStyles = StyleSheet.create({
     height: 8,
     marginHorizontal: 3,
     borderRadius: 4,
-    backgroundColor: '#FF1493',
+    backgroundColor: '#C2185B',
   },
   dotSelected: {
     backgroundColor: '#e91e63',

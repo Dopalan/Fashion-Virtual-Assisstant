@@ -13,7 +13,7 @@ const CustomDot = ({ selected }: DotProps) => (
   <View
     style={[
       styles.dot,
-      { backgroundColor: '#FF1493' },
+      { backgroundColor: '#C2185B' },
       selected && { width: 12, height: 12, borderRadius: 6 },
     ]}
   />
@@ -24,7 +24,7 @@ const CustomDot = ({ selected }: DotProps) => (
 const CustomNextButton = (props: any) => (
   <TouchableOpacity
     onPress={props.onPress}
-    style={[styles.buttonContainer, { backgroundColor: '#FF1493' }]}
+    style={[styles.buttonContainer, { backgroundColor: '#C2185B' }]}
   >
     <Text style={styles.buttonText}>Next</Text>
   </TouchableOpacity>
@@ -33,7 +33,7 @@ const CustomNextButton = (props: any) => (
 const CustomSkipButton = (props: any) => (
   <TouchableOpacity
     onPress={props.onPress}
-    style={[styles.buttonContainer, { backgroundColor: '#FF1493' }]}
+    style={[styles.buttonContainer, { backgroundColor: '#C2185B' }]}
   >
     <Text style={styles.buttonText}>Skip</Text>
   </TouchableOpacity>
@@ -46,15 +46,10 @@ interface CustomDoneButtonProps {
 const CustomDoneButton = (props: CustomDoneButtonProps) => {
   return (
     <View style={styles.doneContainer}>
-      <TouchableOpacity
-        onPress={props.resetOnboarding}
-        style={[styles.buttonContainer, { backgroundColor: '#FF1493' }]}
-      >
-        <Text style={styles.buttonText}>Back to Start</Text>
-      </TouchableOpacity>
+
       <TouchableOpacity
         onPress={props.onPress}
-        style={[styles.buttonContainer, { backgroundColor: '#FF1493' }]}
+        style={[styles.buttonContainer, { backgroundColor: '#C2185B' }]}
       >
         <Text style={styles.buttonText}>Get Started</Text>
       </TouchableOpacity>
