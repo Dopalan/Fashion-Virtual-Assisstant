@@ -38,10 +38,10 @@ export default function AppNavigator() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={'Login'}>
-        {/* {isFirstLaunch && (
+      <Stack.Navigator initialRouteName={isFirstLaunch ? 'Onboarding' : 'Login'}>
+        {isFirstLaunch && (
           <Stack.Screen name="Onboarding" component={OnboardingScreen} options={{ headerShown: false }} />
-        )} */}
+        )}
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
       </Stack.Navigator>

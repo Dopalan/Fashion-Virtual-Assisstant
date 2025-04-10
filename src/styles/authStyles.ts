@@ -44,8 +44,9 @@ export const authStyles = StyleSheet.create({
   dot: {
     width: 8,
     height: 8,
+    marginHorizontal: 3,
     borderRadius: 4,
-    marginHorizontal: 4,
+    backgroundColor: '#FF1493',
   },
   dotSelected: {
     backgroundColor: '#e91e63',
@@ -62,5 +63,20 @@ export const authStyles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 20,
     overflow: 'hidden',
+  },
+  buttonContainer: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 20,
+    marginHorizontal: 6,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+  },
+  doneContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    marginHorizontal: 10,
   },
 });
